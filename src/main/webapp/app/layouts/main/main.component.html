@@ -1,13 +1,46 @@
+<style>
+    .main-sidebar{
+        padding:20px;
+        height:100%;
+    }
+
+    .main-sidenav-content{
+        display: flex;
+        height: 100%;
+    }
+
+    mat-drawer{
+        width:250px;
+    }
+
+    mat-drawer-container{
+        height:100%;
+    }
+</style>
+
 <jhi-page-ribbon></jhi-page-ribbon>
 
 <div>
     <router-outlet name="navbar"></router-outlet>
 </div>
 
-<div class="container-fluid">
+<mat-drawer-container>
+    <mat-drawer class="main-sidebar" mode="side" opened style="background-color: white;">
+        <p>Sidenav Menu</p>
+    </mat-drawer>
+    <mat-drawer-content >
+        <div class="card jh-card">
+            <router-outlet></router-outlet>
+        </div>
+
+        <jhi-footer></jhi-footer>
+    </mat-drawer-content>
+</mat-drawer-container>
+
+<!--<div class="container-fluid">
     <div class="card jh-card">
         <router-outlet></router-outlet>
     </div>
 
     <jhi-footer></jhi-footer>
-</div>
+</div>-->
