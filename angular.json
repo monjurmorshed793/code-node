@@ -31,6 +31,7 @@
   },
   "defaultProject": "codenode",
   "cli": {
-    "packageManager": "npm"
+    "packageManager": "npm",
+    "analytics": "dad22d88-4d64-47c2-b4af-c0fd56955c39"
   }
 }
