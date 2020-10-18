@@ -1,5 +1,7 @@
 <style>
     .main-sidebar{
+        display: flex;
+        flex-direction: column;
         padding:20px;
         height:100%;
     }
@@ -24,23 +26,22 @@
     <router-outlet name="navbar"></router-outlet>
 </div>
 
-<mat-drawer-container>
+<!--<mat-drawer-container autosize style="position: absolute; right: 0px; left: 0px; bottom: 0px;">
     <mat-drawer class="main-sidebar" mode="side" opened style="background-color: white;">
         <p>Sidenav Menu</p>
     </mat-drawer>
     <mat-drawer-content >
-        <div class="card jh-card">
-            <router-outlet></router-outlet>
+        <div class="container-fluid min-h-100">
+            <div class="card jh-card">
+                <router-outlet></router-outlet>
+            </div>
         </div>
-
-        <jhi-footer></jhi-footer>
     </mat-drawer-content>
-</mat-drawer-container>
+</mat-drawer-container>-->
 
-<!--<div class="container-fluid">
+<div class="container-fluid min-h-100">
     <div class="card jh-card">
         <router-outlet></router-outlet>
     </div>
-
     <jhi-footer></jhi-footer>
-</div>-->
+</div>

@@ -17,6 +17,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButton } from '@angular/material/button';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { LoginExtendedModule } from 'app/login-extended/login-extended.module';
 
 @NgModule({
   imports: [
@@ -24,12 +26,14 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     CodenodeSharedModule,
     CodenodeCoreModule,
     CodenodeHomeModule,
+    LoginExtendedModule,
     // jhipster-needle-angular-add-module JHipster will add new module here
     CodenodeEntityModule,
     CodenodeAppRoutingModule,
     BrowserAnimationsModule,
     MatSliderModule,
     MatSidenavModule,
+    FlexLayoutModule,
   ],
   declarations: [MainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, FooterComponent],
   bootstrap: [MainComponent],
